@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Create a function that takes an array of integers and removes duplicates using loops.  -->
+</head>
+<body>
+    <script>
+
+            let numbers =[1, 2,1, 3, 4, 5,1,3,4];
+            function removeDuplicate(){
+                let empty=[];
+                for(let i=0;i<numbers.length;i++){
+
+                    if(!empty.includes(numbers[i])){
+                        empty.push(numbers[i]);
+
+                    }
+                }
+                console.log(empty);
+            }
+            removeDuplicate();
+            
+
+    </script>
+</body>
+</html>

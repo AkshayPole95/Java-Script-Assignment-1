@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Use nested loops to print the following pattern: -->
+</head>
+<body>
+    <script>
+        function printPattern(n) {
+            // Outer loop for number of rows
+            for (let i = 1; i <= n; i++) {
+                let row = "";  // Initialize an empty string to build the row
+                // Inner loop for number of stars in each row
+                for (let j = 1; j <= i; j++) {
+                    row += "*";  // Add one star at a time
+                }
+                console.log(row);  // Print the complete row
+            }
+        }
+
+        // Example usage:
+        let n = 5;
+        printPattern(n);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Write a program to calculate the power of a number (e.g., base^exponent) without using the Math.pow() function. -->
+</head>
+<body>
+
+    <script>
+        function power(base, exponent) {
+            let result = 1;
+
+            // Use a loop to multiply the base the specified number of times
+            for (let i = 0; i < Math.abs(exponent); i++) {
+                result *= base;
+            }
+
+            // If the exponent is negative, take the reciprocal of the result
+            if (exponent < 0) {
+                result = 1 / result;
+            }
+
+            return result;
+        }
+
+        // Example usage:
+        const base = 2;
+        const exponent = 3;
+        console.log(`${base} raised to the power ${exponent} is ${power(base, exponent)}`);
+
+    </script>
+    
+</body>
+</html>

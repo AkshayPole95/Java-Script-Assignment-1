@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Write a loop to find the intersection of two arrays (common elements). -->
+</head>
+<body>
+
+    <script>
+        function findIntersection(arr1, arr2) {
+            let intersection = [];
+
+            // Loop through the first array
+            for (let i = 0; i < arr1.length; i++) {
+                // Check if the element is in the second array
+                if (arr2.includes(arr1[i])) {
+                    // Add the common element to the intersection array
+                    intersection.push(arr1[i]);
+                }
+            }
+
+            return intersection;
+        }
+
+        // Example usage:
+        let array1 = [1, 2, 3, 4, 5];
+        let array2 = [4, 5, 6, 7, 8];
+        console.log("Intersection:", findIntersection(array1, array2));
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Create an object person with a nested object address containing street, city, and zipCode. Destructure the nested object to extract the address properties into variables. -->
+</head>
+<body>
+    <script>
+        let person = {
+        name: "James",
+        age: 32,
+        address: {
+            street: "Main St",
+            city: "New York",
+            zipCode: 10001
+        }
+        };
+
+        let { address: { street, city, zipCode } } = person;
+
+        console.log(street);  
+        console.log(city);    
+        console.log(zipCode); 
+
+    </script>
+</body>
+</html>

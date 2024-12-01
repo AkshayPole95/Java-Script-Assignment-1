@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Write a function that generates the Fibonacci sequence up to a given number of terms. -->
+</head>
+<body>
+    <script>
+
+        function generateFibonacci(n) {
+        // Initialize an array to store the Fibonacci sequence
+        let fibonacci = [];
+
+        // First two Fibonacci numbers are always 0 and 1
+        fibonacci[0] = 0;
+        if (n > 1) fibonacci[1] = 1;
+
+        // Generate Fibonacci numbers from the 3rd term to nth term
+        for (let i = 2; i < n; i++) {
+            fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+        }
+
+        return fibonacci;
+        }
+
+        // Example usage:
+        let terms = 5;
+        console.log(generateFibonacci(terms));  // Output: [0, 1, 1, 2, 3]
+
+    </script>
+</body>
+</html>

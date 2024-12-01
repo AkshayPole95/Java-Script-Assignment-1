@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Use a loop to check if a given word is a palindrome (same forwards and backwards) -->
+</head>
+<body>
+    <script>
+       let num=1221;
+       let original=num;
+       let rev=0;
+       function palindrome (){
+        while(num>0){
+
+            let a=num%10;
+            rev=rev*10+a
+            num=Math.floor(num/10);
+
+        }
+        if(original===rev){
+            console.log("Palindrome");
+        }else{
+            console.log("Not");
+        }
+        
+       }
+       
+    palindrome();
+    </script>
+</body>
+</html>

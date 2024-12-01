@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Create an object settings with properties theme, fontSize, and language. Use Object.freeze() to prevent modifications, then try to change a property and log the object to verify it hasn’t changed. -->
+</head>
+<body>
+    <script>
+        let settings = {
+        theme: "dark",
+        fontSize: "16px",
+        language: "en"
+        };
+
+        Object.freeze(settings);
+
+        settings.theme = "light";
+        console.log(settings);     
+    </script>
+</body>
+</html>
